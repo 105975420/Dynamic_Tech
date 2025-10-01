@@ -1,22 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="content" content="Dynamic Tech, technology, it, IT">
-    <link rel="stylesheet" href="styles/styles.css"/>
-    <title>Dynamic Tech</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="content" content="Dynamic Tech, technology, it, IT">
+  <link rel="stylesheet" href="styles/styles.css"/>
+  <title>Dynamic Tech</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      background: #222;
+      color: #fff;
+      padding: 15px 30px;
+    }
+
+    header nav a {
+      color: #fff;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    /* -------------------------Accordion------------------- */
+    .accordion {
+      margin: 12px 0;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .accordion input {
+      display: none;
+    }
+
+    .accordion label {
+      display: block;
+      background: #e6e6e6;
+      padding: 12px 15px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .accordion label:hover {
+      background: #d0e4ff;
+    }
+
+    .accordion .content {
+      max-height: 0;
+      overflow: hidden;
+      background: #fff;
+      padding: 0 15px;
+      transition: max-height 0.5s ease, padding 0.5s ease;
+      border-left: 2px solid #0073e6;
+    }
+
+    .accordion input:checked ~ .content {
+      max-height: 1000px; 
+      padding: 15px;
+    }
+
+    .accordion .content p, 
+    .accordion .content ul {
+      margin: 8px 0;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .accordion .content ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img id="company_logo" src="images/company_logo.png" alt="company logo"></a>
-        <nav>
-            <a href="index.html"><strong>HOME</strong></a>
-            <a class="active" href="jobs.html"><strong>CAREERS</strong></a>
-            <a href="apply.html"><strong>APPLY</strong></a>
-            <a href="about.html"><strong>ABOUT</strong></a>
-        </nav>
-        <a id="mail" href="mailto:infor@dynamictech.com.au"><strong>Contact Us</strong></a>
-    </header>
+<header>
+  <a href="index.html"><img id="company_logo" src="images/company_logo.png" alt="company logo" style="height:40px;"></a>
+  <nav>
+    <a href="index.html"><strong>HOME</strong></a>
+    <a class="active" href="jobs.html"><strong>CAREERS</strong></a>
+    <a href="apply.html"><strong>APPLY</strong></a>
+    <a href="about.html"><strong>ABOUT</strong></a>
+  </nav>
+  <a id="mail" href="mailto:info@dynamictech.com.au" style="float:right; color:#fff;"><strong>Contact Us</strong></a>
+</header>
+
+<main>
+  <section id="company-overview">
+    <h1>Dynamic Tech – Company Overview</h1>
+    <p><strong>Company Name:</strong> Dynamic Tech</p>
+    <p><strong>Industry:</strong> Technology Solutions Provider</p>
+
+    <h2>Overview</h2>
+    <p>Dynamic Tech is a leading provider of comprehensive technology solutions for businesses. 
+    We operate across multiple areas, including software development, network infrastructure management, 
+    cybersecurity, cloud computing, data analytics, and artificial intelligence.</p>
+
+    <h2>Company Information</h2>
+    <ul>
+      <li><strong>Founded:</strong> 2015</li>
+      <li><strong>Scale:</strong> 200+ employees, headquarters in Hanoi, with offices in Ho Chi Minh City and Da Nang</li>
+      <li><strong>Mission:</strong> To support businesses in their <em>digital transformation</em> journey, optimizing processes and improving efficiency.</li>
+      <li><strong>Vision:</strong> To become a leading technology solutions company in Vietnam and expand to Southeast Asia by 2030.</li>
+    </ul>
+  </section>
+
+  <section id="job-openings">
+    <h2>Current Job Openings</h2>
+
+    <!-------------------------------------- Software Developer ----------------------------------->
+    <div class="accordion">
+      <input type="checkbox" id="job1">
+      <label for="job1">G01 – Software Developer</label>
+      <div class="content">
+        <p><strong>Job Description:</strong> Develop scalable web/mobile applications, collaborate in agile teams, and deliver innovative solutions.</p>
+        <p><strong>Requirements:</strong></p>
+        <ul>
+          <li>Proficiency in Java, Python, or C#</li>
+          <li>Experience with React, Angular, or .NET</li>
+          <li>Knowledge of SQL/MongoDB</li>
+        </ul>
+        <p><strong>Openings:</strong> 5 positions</p>
+        <p><strong>Work Environment:</strong> Agile teams, hybrid working model, international clients</p>
+        <p><strong>Benefits:</strong> Competitive salary, yearly bonus, certification support</p>
+      </div>
+    </div>
+
+    <!----------------------------- Network Admin ---------------------------------------->
+    <div class="accordion">
+      <input type="checkbox" id="job2">
+      <label for="job2">G02 – Network Administrator</label>
+      <div class="content">
+        <p><strong>Job Description:</strong> Manage enterprise networks, ensure uptime & security, troubleshoot connectivity issues.</p>
+        <p><strong>Requirements:</strong></p>
+        <ul>
+          <li>Strong knowledge of LAN/WAN, TCP/IP</li>
+          <li>Experience with Cisco/Juniper</li>
+          <li>CCNA/CCNP preferred</li>
+        </ul>
+        <p><strong>Openings:</strong> 3 positions</p>
+        <p><strong>Work Environment:</strong> 24/7 support rotation, professional IT team</p>
+        <p><strong>Benefits:</strong> Certification training, health insurance</p>
+      </div>
+    </div>
+
+    <!-------------------------------- Data Analyst -------------------------------------------->
+    <div class="accordion">
+      <input type="checkbox" id="job3">
+      <label for="job3">G03 – Data Analyst</label>
+      <div class="content">
+        <p><strong>Job Description:</strong> Analyze big data, create dashboards, and generate insights to support strategic decisions.</p>
+        <p><strong>Requirements:</strong></p>
+        <ul>
+          <li>SQL, Excel, Power BI/Tableau</li>
+          <li>Basic Python/R</li>
+        </ul>
+        <p><strong>Openings:</strong> 4 positions</p>
+        <p><strong>Work Environment:</strong> Data-driven projects, cross-team collaboration</p>
+        <p><strong>Benefits:</strong> Attractive salary, training, performance bonus</p>
+      </div>
+    </div>
+
+    <!------------------Apply-------------------->
+      <p style="margin-top:20px; font-size: 15px; color:#333;">
+    If you are interested, please check details and apply on the 
+    <a href="apply.html"><strong>Apply</strong></a> page.
+  </p>
+
+    
+  </section>
+</main>
+ 
+<!-------------------Footer------------------>
+<footer>
+  <p>&copy; 2025 Dynamic Tech. All rights reserved.</p>
+</footer>
+
+
+
+
 </body>
+
+
+
+
+
 </html>

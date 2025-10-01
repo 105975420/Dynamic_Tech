@@ -237,3 +237,115 @@ nav a.active::after{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/*------------------------------Tuan_anh--------------------------*/
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri, Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c3e50;
+    padding: 15px 40px;
+    color: white;
+}
+
+header img {
+    height: 50px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #1abc9c;
+}
+
+nav a.active {
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 3px;
+}
+
+#mail {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#mail:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+p, li {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: disc inside;
+    margin-left: 20px;
+}
+
+/* Job Openings */
+#job-openings ul li {
+    background: #ecf0f1;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#job-openings ul li:hover {
+    background: #d1f2eb;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 30px;
+}
+ 
+
+/*------------------------------Tuan_anh--------------------------*/
