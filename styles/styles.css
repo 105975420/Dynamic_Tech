@@ -123,11 +123,12 @@ nav a.active::after{
     font-size: 3rem;
     font-weight: 800;
     line-height: 70px;
+    color: white;
 }
 
 .button_banner a{
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 50px;
     
 }
 
@@ -139,6 +140,7 @@ nav a.active::after{
   font-size: 1.2rem;
   letter-spacing: 1px;  
   margin-bottom: 70px;
+  color: white;
 }
 
 
@@ -150,6 +152,7 @@ nav a.active::after{
     font-weight: 700;
     margin-right: 30px;
     font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 #apply_banner {
@@ -160,13 +163,17 @@ nav a.active::after{
     font-weight: 700;
     margin-left: 30px;
     font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 #slogan {
     font-style: italic;
     font-size: 1.5rem;
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
+
+/* ------------------------About.html (Tran DUc Viet) */
 .about-header {
   text-align: center;
   margin-top: 100px; 
