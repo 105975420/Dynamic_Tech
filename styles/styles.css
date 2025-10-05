@@ -3,6 +3,7 @@
 *{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    
 }
 header{
     width: 100%;
@@ -89,6 +90,10 @@ nav a.active::after{
 }
 /* -------------------------------index(Pham Tien Dat)---------------------------------- */
 
+main {
+  min-width: 30em;
+}
+
 .banner {
     background-image: url(images/background_banner.jpg);
     background-size: cover;
@@ -172,6 +177,43 @@ nav a.active::after{
     font-family: 'Times New Roman', Times, serif;
     color: white;
 }
+
+.logo_about {
+    width: auto;
+    height: 190px;
+    
+    
+}
+.content_about{
+  width: 45%;
+}
+
+#about, #vision-mission {
+  color: #f4271b;
+}
+
+#about{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.content_about, .logo_about {
+  float: left;
+  margin: 0 2.5%;
+}
+
+#vision-mission {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.vision, .mission {
+  width: 45%;
+  float: left;
+  margin: 0 2.5%;
+}
+
 
 /* ------------------------About.html (Tran DUc Viet)------------------------------ */
 .about-header {
