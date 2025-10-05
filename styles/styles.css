@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /*the font for whole web*/
 /*------------Menu(Pham Tien Dat)------------------- */
+html, body {
+  overscroll-behavior: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; 
+}
+main {
+  flex: 1;                   
+}
 *{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -87,6 +98,55 @@ nav a.active::after{
     border-radius: 30px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     
+}
+
+
+/* -------------------------------Footer(Pham Tien Dat)--------------------------------- */
+footer{
+  margin-top: 40px;
+  background-color: #333;
+  color: white;
+  
+}
+
+#containner {
+  display: flex;
+  justify-content: center;   
+  align-items: center;         
+  gap: 20%;                
+  flex-wrap: wrap;            
+}
+
+#containner_2 {
+  text-align: center;
+  
+} 
+
+#containner_2 ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#containner_2 a {
+   text-decoration: none;
+   color: white;
+}
+
+#containner_3 {
+  text-align: center;
+}
+
+#containner_3 a {
+  text-decoration: none;
+  color: #f4271b;
+}
+.logo_footer{
+  width: auto;
+  height: 200px;
+}
+
+#copy {
+  text-align: center;
 }
 /* -------------------------------index(Pham Tien Dat)---------------------------------- */
 
@@ -180,7 +240,7 @@ main {
 
 .logo_about {
     width: auto;
-    height: 190px;
+    height: 200px;
     
     
 }
@@ -188,7 +248,16 @@ main {
   width: 45%;
 }
 
-#about, #vision-mission {
+#about h2, #vision-mission h2 {
+  color: #f4271b;
+  font-weight: 700;
+  font-size: 2em;
+}
+#about p, #vision-mission p {
+  font-size: 1.5em;
+}
+
+.special {
   color: #f4271b;
 }
 
@@ -214,7 +283,11 @@ main {
   margin: 0 2.5%;
 }
 
+/* ------------------------Apply.html (Pham Tien Dat)------------------------------ */
 
+#body_apply {
+  background: linear-gradient(90deg, orange, #f4271b); ;
+}
 /* ------------------------About.html (Tran DUc Viet)------------------------------ */
 .about-header {
   text-align: center;
