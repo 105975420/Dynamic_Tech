@@ -1,4 +1,6 @@
-/* -------------------- JOB OPENINGS (minimal accordion) -------------------- */
+/*------------------------------Tuan_anh--------------------------*/
+
+/* JOB OPENINGS */
 
 #job-openings {
   width: 80%;
@@ -8,7 +10,7 @@
 
 #job-openings h2 {
   text-align: center;
-  color: #c62828; /* đỏ nhẹ theo màu logo */
+  color: #c62828; 
   margin-bottom: 25px;
 }
 
@@ -20,7 +22,7 @@
   overflow: hidden;
 }
 
-/* Tiêu đề mỗi job */
+/* Title Jobs */
 .accordion label {
   display: block;
   background: #f7d7d7;
@@ -47,7 +49,7 @@
 }
 
 .accordion input[type="checkbox"]:checked ~ .content {
-  max-height: 600px; /* đủ dài cho chi tiết */
+  max-height: 600px; 
   padding: 15px 18px;
 }
 
@@ -74,3 +76,4 @@
     width: 95%;
   }
 }
+/*------------------------------Tuan_anh--------------------------*/
