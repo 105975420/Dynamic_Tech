@@ -1,79 +1,161 @@
 /*------------------------------Tuan_anh--------------------------*/
 
-/* JOB OPENINGS */
+/*Company details*/
+body {
+  margin: 0;
+  background: linear-gradient(90deg, #ff7e30, #ff4b2b); 
+  font-family: Calibri, sans-serif;
+}
 
-#job-openings {
+
+.page-container {
+  width: 85%;
+  max-width: 1000px;
+  margin: 50px auto;
+  background: #fff8f8;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+}
+
+
+#company-overview,
+#company-info {
   width: 80%;
   margin: 50px auto;
+  background: #fff8f8;             
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   font-family: Calibri, sans-serif;
+  padding: 25px 30px;
+  line-height: 1.6;
+}
+
+/* Section titles */
+#company-overview h2,
+#company-info h2 {
+  text-align: center;
+  color: #c62828;                  
+  font-size: 1.8em;
+  font-weight: bold;
+  border-bottom: 2px solid #c62828;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* Description text */
+#company-overview p,
+#company-info p {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Lists */
+#company-overview ul,
+#company-info ul {
+  margin-left: 25px;
+  color: #444;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #company-overview,
+  #company-info {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+/*-------------------Company Detail----------------------*/
+
+
+
+
+
+/*-----------------JOB OPENINGS-------------------*/
+
+
+#job-openings {
+  width: 85%;
+  margin: 40px auto;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #fff6f6, #ffecec);
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
 #job-openings h2 {
   text-align: center;
-  color: #c62828; 
-  margin-bottom: 25px;
+  color: #b71c1c;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
-/* Job accordion */
-.accordion {
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  margin-bottom: 12px;
+/* Accordion container */
+#job-openings .accordion {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
   overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
 }
 
-/* Title Jobs */
-.accordion label {
+/* Accordion labels */
+#job-openings .accordion label {
   display: block;
-  background: #f7d7d7;
+  background: linear-gradient(90deg, #ffe5e5, #ffd6d6);
   color: #222;
-  padding: 12px 18px;
+  padding: 14px 20px;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s ease;
 }
 
-.accordion label:hover {
-  background: #f3baba;
+#job-openings .accordion label:hover {
+  background: linear-gradient(90deg, #ffcaca, #ffbdbd);
 }
 
-/* Detail Job */
-.accordion .content {
+/* Accordion content */
+#job-openings .accordion .content {
   max-height: 0;
   overflow: hidden;
-  padding: 0 18px;
-  background: #fff8f8;
-  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 20px;
+  background: #fffdfd;
+  border-top: 1px solid #eee;
   font-size: 0.95rem;
-  line-height: 1.5;
+  line-height: 1.6;
+  transition: max-height 0.4s ease, padding 0.3s ease;
 }
 
-.accordion input[type="checkbox"]:checked ~ .content {
-  max-height: 600px; 
-  padding: 15px 18px;
+/* Expand when checkbox checked */
+#job-openings .accordion input[type="checkbox"]:checked ~ .content {
+  max-height: 600px;
+  padding: 20px;
 }
 
-/* Link Apply */
+/* Apply link section */
 #job-openings p {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 30px;
   color: #333;
+  font-size: 1rem;
 }
 
 #job-openings a {
   color: #c62828;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
 #job-openings a:hover {
+  color: #8e0000;
   text-decoration: underline;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-  #job-openings {
-    width: 95%;
-  }
-}
-/*------------------------------Tuan_anh--------------------------*/
+/*------------------------------Tuan Anh--------------------------*/
