@@ -288,6 +288,18 @@ main {
 #body_apply {
   background: linear-gradient(90deg, orange, #f4271b); ;
 }
+
+
+#tittle_apply{
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+#form_apply {
+  background-color: white;
+}
 /* ------------------------About.html (Tran DUc Viet)------------------------------ */
 .about-header {
   text-align: center;

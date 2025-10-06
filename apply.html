@@ -19,7 +19,64 @@
         <a id="mail" href="mailto:info@dynamictech.com.au"><strong>Contact Us</strong></a>
     </header>
     <main>
+        <section id="containner_apply">
+            <section id="tittle_apply">
+                <h1>JOB APPLICATION</h1>
+            </section>
+            <section id="form_apply">
+                <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+                    <p>
+                        <label for="job_reference_number">Job reference number <span>*</span></label>
+                        <select id="job_reference_number" name="job_reference_number" required="required">
+                            <option value="g01">G01</option>
+                            <option value="g02">G02</option>
+                            <option value="g03">G03</option>
+                            <option value="g04">G04</option>
+                            <option value="g05">G05</option>
+                            <option value="g06">G06</option>
+                            <option value="g07">G07</option>
+                            <option value="g08">G08</option>
+                            <option value="g09">G09</option>
+                        </select>
+                    </p>
 
+                    <p>
+                        <label for="first_name">First name <span>*</span></label>
+                        <input type="text" id="first_name" name="first_name" required="required">
+                    </p>
+
+                    <p>
+                        <label for="last_name">Last name <span>*</span></label>
+                        <input type="text" id="last_name" name="last_name" required="required">
+                    </p>
+
+                    <p>
+                        <label for="date_of_birth">Date of birth <span>*</span></label>
+                        <input type="text" id="date_of_birth" name="date_of_birth" placeholder="Enter your date of birth (dd/mm/yyyy)" required="required" pattern="\d{1,2}\/\d{1,2}\/\d{4}">
+                    </p>
+
+                    <p>
+                        <fieldset>
+                            <legend>
+                                Gender <span>*</span>
+                            </legend>
+                            <div class="gender_option">
+                                <input type="radio" id="gender_male" name="gender" value="male" required="required">
+                                <label for="gender_male">Male</label>
+                                <input type="radio" id="gender_female" name="gender" value="female" required="required">
+                                <label for="gender_female">Female</label>
+                            </div>
+                        </fieldset>
+                    </p>
+
+                    <p>
+                        <label for="str_addres">Street address <span>*</span></label>
+                        <input type="text" id="str_addres" name="str_addres" placeholder="Enter your street address" required="required"></input>
+                    </p>
+
+                </form>
+            </section>
+        </section>
     </main>
     <!-------------------Footer------------------>
     <footer>
@@ -39,6 +96,8 @@
             <section id="containner_3">
                 <h3>Contact Us</h3>
                 <a href="mailto:info@dynamictech.com.au"><strong>info@dynamictech.com.au</strong></a>
+                <h3>Jira Connection</h3>
+                <a href="https://tiendat6756.atlassian.net/jira/software/projects/PP1/boards/37"><strong>https://tiendat6756.atlassian.net/jira/software/projects/PP1/boards/37</strong></a>
             </section>
         </section>
         <hr>
