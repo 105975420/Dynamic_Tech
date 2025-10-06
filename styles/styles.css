@@ -148,143 +148,6 @@ footer{
 #copy {
   text-align: center;
 }
-/* -------------------------------index(Pham Tien Dat)---------------------------------- */
-
-main {
-  min-width: 30em;
-}
-
-.banner {
-    background-image: url(images/background_banner.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-}
-.banner::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3));
-    z-index: 1;
-}
-.banner_content{
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
-
-.banner_content h1{
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 70px;
-    color: white;
-}
-
-.button_banner a{
-    text-decoration: none;
-    border-radius: 50px;
-    
-}
-
-#desc{
-  padding-top: 20px;
-  padding-bottom: 30px;
-  width: 60%;
-  min-width: 435px;
-  font-size: 1.2rem;
-  letter-spacing: 1px;  
-  margin-bottom: 70px;
-  color: white;
-}
-
-
-#job_banner {
-    color: #f4271b;
-    background: white;
-    border: 3px solid #f4271b;
-    padding: 40px 60px ;
-    font-weight: 700;
-    margin-right: 30px;
-    font-size: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-#apply_banner {
-    color: white;
-    background: linear-gradient(to right, orange, #f4271b);
-    border: 3px solid white;
-    padding: 40px 70px ;
-    font-weight: 700;
-    margin-left: 30px;
-    font-size: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-#slogan {
-    font-style: italic;
-    font-size: 1.5rem;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-}
-
-<<<<<<< HEAD
-/* ------------------------About.html (Tran Duc Viet)------------------------------ */
-=======
-.logo_about {
-    width: auto;
-    height: 200px;
-    
-    
-}
-.content_about{
-  width: 45%;
-}
-
-#about h2, #vision-mission h2 {
-  color: #f4271b;
-  font-weight: 700;
-  font-size: 2em;
-}
-#about p, #vision-mission p {
-  font-size: 1.5em;
-}
-
-.special {
-  color: #f4271b;
-}
-
-#about{
-  width: 100%;
-  overflow: hidden;
-  margin-top: 40px;
-}
-
-.content_about, .logo_about {
-  float: left;
-  margin: 0 2.5%;
-}
-
-#vision-mission {
-  width: 100%;
-  overflow: hidden;
-  margin-top: 40px;
-}
-.vision, .mission {
-  width: 45%;
-  float: left;
-  margin: 0 2.5%;
-}
 
 /* ------------------------Apply.html (Pham Tien Dat)------------------------------ */
 #body_apply {
@@ -438,7 +301,6 @@ textarea {
 
 
 /* ------------------------About.html (Tran DUc Viet)------------------------------ */
->>>>>>> c27ee0b8d6b7eeeb93a916001035d03fc339296f
 .about-header {
   text-align: center;
   margin-top: 100px; 
@@ -498,10 +360,7 @@ textarea {
 .about-content table th,
 .about-content table td {
   padding: 10px;
-  border: 1px solid;
-  color: #fefefe; 
-  text-shadow: 0 0 8px rgba(0,0,0,0.5); 
-  font-weight: 500;
+  border: 1px solid #333;
   text-align: center;
 }
 
@@ -511,69 +370,9 @@ textarea {
   margin-bottom: 10px;
 }
 
-.background {
-    background-image: url(styles/images/background_about.jpg);
-    background-repeat: no-repeat; background-size: cover;
-    background-size: cover;
-    background-position: center;
-    width: 80%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-} 
 
-.content {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto; 
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start; 
-  background-color: rgba(255, 255, 255, 0.8); 
-  border-radius: 15px;
-}
- content {
-  color: white; 
- 
-}
 
- h2, p, li, table {
-  color: white;
-}
 
-table {
-  border: 1px solid white;
-}
-
-td, th {
-  border: 1px solid white;
-  padding: 8px;
-}
-
-img {
-  display: block;
-  margin: 10px auto;
-}
-body {
-  position: relative;
-  background: url("background.jpg") no-repeat center center fixed;
-  background-size: cover;
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.4); 
-  z-index: -1; 
-}
 
 
 
