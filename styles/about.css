@@ -1,0 +1,176 @@
+h1,h3 {
+  text-align: center;
+}
+
+.menu {
+  text-align: center; /* căn giữa các thẻ a */
+  margin-top: 50px; /* tạo khoảng cách phía trên */
+}
+
+.menu a {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+ background: linear-gradient(90deg, #ff7e30, #ff4b2b);
+}
+
+/* Container chỉ cho ảnh */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px; /* tăng khoảng cách nếu ảnh to hơn */
+  margin-top: 50px;
+}
+
+.image-item {
+  text-align: center;
+  width: 300px; /* rộng theo kích thước ảnh */
+}
+
+.image-item img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.image-item p {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #111;
+  line-height: 1.5;
+}
+.centered-table {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px; /* tạo khoảng cách phía trên */
+}
+
+.centered-table table {
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 30px;
+  text-align: center;
+  width: auto;
+  border-radius: 10px;
+}
+
+.centered-table td {
+  padding: 30px 50px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #222;
+  line-height: 1.6;
+}
+#job-openings {
+  width: 85%;
+  margin: 40px auto;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #fff6f6, #ffecec);
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+#job-openings  {
+  text-align: center;
+  color: #b71c1c;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+/* Accordion container */
+#job-openings .accordion {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+.profile-image {
+  display: block;
+  margin: 10px auto 20px;
+  width: 120px;         /* ✅ Giảm kích thước ảnh */
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+/* Accordion labels */
+#job-openings .accordion label {
+  display: block;
+  background: linear-gradient(90deg, #ffe5e5, #ffd6d6);
+  color: #222;
+  padding: 14px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#job-openings .accordion label:hover {
+  background: linear-gradient(90deg, #ffcaca, #ffbdbd);
+}
+
+/* Accordion content */
+#job-openings .accordion .content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  background: #fffdfd;
+  border-top: 1px solid #eee;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+/* Expand when checkbox checked */
+#job-openings .accordion input[type="checkbox"]:checked ~ .content {
+  max-height: 600px;
+  padding: 20px;
+}
+.full-width-table {
+  width: 100%;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.full-width-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.full-width-table th,
+.full-width-table td {
+  border: 1px solid #ddd;
+  padding: 16px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.full-width-table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.full-width-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
