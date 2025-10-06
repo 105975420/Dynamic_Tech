@@ -1,0 +1,76 @@
+/* -------------------- JOB OPENINGS (minimal accordion) -------------------- */
+
+#job-openings {
+  width: 80%;
+  margin: 50px auto;
+  font-family: Calibri, sans-serif;
+}
+
+#job-openings h2 {
+  text-align: center;
+  color: #c62828; /* đỏ nhẹ theo màu logo */
+  margin-bottom: 25px;
+}
+
+/* Job accordion */
+.accordion {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+/* Tiêu đề mỗi job */
+.accordion label {
+  display: block;
+  background: #f7d7d7;
+  color: #222;
+  padding: 12px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.accordion label:hover {
+  background: #f3baba;
+}
+
+/* Detail Job */
+.accordion .content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 18px;
+  background: #fff8f8;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.accordion input[type="checkbox"]:checked ~ .content {
+  max-height: 600px; /* đủ dài cho chi tiết */
+  padding: 15px 18px;
+}
+
+/* Link Apply */
+#job-openings p {
+  text-align: center;
+  margin-top: 25px;
+  color: #333;
+}
+
+#job-openings a {
+  color: #c62828;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#job-openings a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #job-openings {
+    width: 95%;
+  }
+}
