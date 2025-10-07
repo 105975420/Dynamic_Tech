@@ -80,12 +80,15 @@ body {
 
 
 #job-openings {
-  width: 85%;
-  margin: 40px auto;
-  border-radius: 20px;
-  background: linear-gradient(135deg, #fff6f6, #ffecec);
-  padding: 40px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 80%;
+  margin: 50px auto;
+  background: #fff8f8;             
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  font-family: Calibri, sans-serif;
+  padding: 25px 30px;
+  line-height: 1.6;
 }
 
 #job-openings h2 {
