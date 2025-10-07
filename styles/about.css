@@ -1,12 +1,51 @@
 h1,h3 {
   text-align: center;
 }
-
-.menu {
-  text-align: center; /* căn giữa các thẻ a */
-  margin-top: 50px; /* tạo khoảng cách phía trên */
+.hero-title {
+  font-family: 'Poppins', 'Montserrat', sans-serif; 
+  font-size: 60px; 
+  font-weight: 900; 
+  color: white; 
+  text-align: center; 
+  letter-spacing: 2px; 
+  margin: 40px 0;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.4); 
 }
 
+.menu {
+  text-align: center; 
+  margin-top: 50px; 
+}
+.student-box {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  text-align: center;
+  padding: 20px;
+  width: 260px;
+  transition: transform 0.2s;
+}
+
+.student-box:hover {
+  transform: scale(1.05);
+}
+
+.student-box img {
+  width: 100%;
+  height: 280px; /* Giới hạn chiều cao ảnh */
+  object-fit: cover; /* Cắt ảnh để vừa khung mà không méo */
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.student-box p {
+  margin: 6px 0;
+  font-family: Arial, sans-serif;
+}
+
+.student-box b {
+  font-size: 18px;
+}
 .menu a {
   display: inline-block;
   margin: 10px;
@@ -27,6 +66,7 @@ body {
 .image-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: flex-start;
   gap: 80px; /* tăng khoảng cách nếu ảnh to hơn */
   margin-top: 50px;
@@ -77,7 +117,8 @@ body {
   color: #222;
   line-height: 1.6;
 }
-#job-openings {
+   
+  #member-contribution {
   width: 85%;
   margin: 40px auto;
   border-radius: 20px;
@@ -86,7 +127,7 @@ body {
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
-#job-openings  {
+#member-contribution  {
   text-align: center;
   color: #b71c1c;
   font-size: 2em;
@@ -95,7 +136,7 @@ body {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 /* Accordion container */
-#job-openings .accordion {
+#member-contribution .accordion {
   border: 1px solid #ddd;
   border-radius: 8px;
   margin-bottom: 15px;
@@ -112,7 +153,7 @@ body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 /* Accordion labels */
-#job-openings .accordion label {
+#member-contribution .accordion label {
   display: block;
   background: linear-gradient(90deg, #ffe5e5, #ffd6d6);
   color: #222;
@@ -122,12 +163,12 @@ body {
   transition: background 0.3s ease;
 }
 
-#job-openings .accordion label:hover {
+#member-contribution .accordion label:hover {
   background: linear-gradient(90deg, #ffcaca, #ffbdbd);
 }
 
 /* Accordion content */
-#job-openings .accordion .content {
+#member-contribution .accordion .content {
   max-height: 0;
   overflow: hidden;
   padding: 0 20px;
@@ -139,7 +180,7 @@ body {
 }
 
 /* Expand when checkbox checked */
-#job-openings .accordion input[type="checkbox"]:checked ~ .content {
+#member-contribution .accordion input[type="checkbox"]:checked ~ .content {
   max-height: 600px;
   padding: 20px;
 }
