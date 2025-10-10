@@ -1,0 +1,149 @@
+/* ------------------------Apply.html (Pham Tien Dat)------------------------------ */
+#body_apply {
+  background: linear-gradient(90deg, orange, #f4271b);
+}
+
+#main_apply {
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#containner_apply{
+   width: 550px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 35px 40px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px); 
+}
+#tittle_apply{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#tittle_apply h1 {
+  color: #f4271b;
+  font-size: 26px;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #f4271b;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+#form_apply {
+  width: 100%;               
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+  
+  
+}
+#form_apply form p {
+  margin-bottom: 18px;
+}
+
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+span {
+  color: red;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  border-color: #f4271b;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #f4271b;
+  box-shadow: 0 0 4px rgba(244, 39, 27, 0.3);
+  outline: none;
+}
+
+fieldset {
+  border: 1px solid #f4271b;
+  border-radius: 6px;
+  padding: 10px 15px;
+}
+
+legend {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.gender_option,
+fieldset p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.button_apply {
+  display: flex;
+  justify-content: space-between; 
+  gap: 12px; 
+  margin-top: 25px;
+  width: 100%;
+}
+
+.button_apply input[type="submit"],
+.button_apply input[type="reset"] {
+  flex: 1; 
+  background-color: #f4271b;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 0;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+}
+
+.button_apply input[type="submit"]:hover,
+.button_apply input[type="reset"]:hover {
+  background-color: #db1b11;
+  transform: translateY(-2px);
+}

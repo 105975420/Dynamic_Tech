@@ -115,6 +115,7 @@ main {
   width: 100%;
   overflow: hidden;
   margin-top: 40px;
+  
 }
 
 .content_about, .logo_about {
@@ -131,4 +132,52 @@ main {
   width: 45%;
   float: left;
   margin: 0 2.5%;
+}
+
+@media screen and (max-width: 1154px) {
+
+  #job_banner {
+    color: #f4271b;
+    background: white;
+    border: 3px solid #f4271b;
+    padding: 20px 40px ;
+    font-weight: 700;
+    margin-right: 30px;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#apply_banner {
+    color: white;
+    background: linear-gradient(to right, orange, #f4271b);
+    border: 3px solid white;
+    padding: 20px 55px ;
+    font-weight: 700;
+    margin-left: 30px;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+  .content_about, .logo_about {
+    float: none;
+    margin: 0 auto;
+  }
+  .logo_about{
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+    width: auto;
+    height: 300px;
+  }
+  .content_about{
+    text-align: center;
+    width: 100%;
+  }
+
+  .vision, .mission {
+    text-align: center;
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
 }

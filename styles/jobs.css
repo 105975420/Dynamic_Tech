@@ -3,7 +3,7 @@
 /*Company details*/
 body {
   margin: 0;
-  background: linear-gradient(90deg, #ff7e30, #ff4b2b); 
+  background: linear-gradient(90deg, orange, #f4271b);
   font-family: Calibri, sans-serif;
 }
 
@@ -76,7 +76,7 @@ body {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1154px) {
   #company-overview,
   #company-info {
     width: 95%;

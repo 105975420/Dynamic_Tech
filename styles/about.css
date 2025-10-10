@@ -59,7 +59,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 20px;
   padding: 0;
- background: linear-gradient(90deg, #ff7e30, #ff4b2b);
+  background: linear-gradient(90deg, orange, #f4271b); 
 }
 
 /* Container chỉ cho ảnh */
