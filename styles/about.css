@@ -1,4 +1,4 @@
-h1,h3 {
+h1,h3,h4 {
   text-align: center;
 }
 .hero-title {
@@ -117,7 +117,15 @@ body {
   color: #222;
   line-height: 1.6;
 }
-   
+#group-photos img {
+   width: 60%;         
+  max-width: 900px;    
+  height: auto;       
+  display: block;      
+  margin: 20px auto;    
+  border-radius: 10px;  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); 
+}
   #member-contribution {
   width: 85%;
   margin: 40px auto;
@@ -146,7 +154,7 @@ body {
 .profile-image {
   display: block;
   margin: 10px auto 20px;
-  width: 120px;         /* ✅ Giảm kích thước ảnh */
+  width: 120px;        
   height: 120px;
   object-fit: cover;
   border-radius: 10px;
