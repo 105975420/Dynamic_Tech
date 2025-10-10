@@ -71,6 +71,7 @@ body {
 /* Lists */
 #company-overview ul,
 #company-info ul {
+  text-align: left;
   margin-left: 25px;
   color: #444;
 }
@@ -114,6 +115,10 @@ body {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
+#job-openings.content p{
+  text-align: left; 
+}
+
 /* Accordion container */
 #job-openings .accordion {
   border: 1px solid #ddd;
@@ -139,6 +144,7 @@ body {
 }
 
 /* Accordion content */
+
 #job-openings .accordion .content {
   max-height: 0;
   overflow: hidden;
@@ -157,7 +163,7 @@ body {
 }
 
 /* Apply link section */
-#job-openings p {
+#job-openings .apply p {
   text-align: center;
   margin-top: 30px;
   color: #333;
