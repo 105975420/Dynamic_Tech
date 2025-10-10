@@ -10,15 +10,27 @@
 </head>
 <body>
 <header>
-  <a href="index.html"><img id="company_logo" src="images/company_logo.png" alt="company logo"></a>
-  <nav>
-    <a href="index.html"><strong>HOME</strong></a>
-    <a class="active" href="jobs.html"><strong>CAREERS</strong></a>
-    <a href="apply.html"><strong>APPLY</strong></a>
-    <a href="about.html"><strong>ABOUT</strong></a>
-  </nav>
-  <a id="mail" href="mailto:info@dynamictech.com.au"><strong>Contact Us</strong></a>
-</header>
+        <a href="index.html"><img id="company_logo" src="images/company_logo.png" alt="company logo"></a>
+        <nav id="menu">
+            <a href="index.html"><strong>HOME</strong></a>
+            <a class="active" href="jobs.html"><strong>CAREERS</strong></a>
+            <a href="apply.html"><strong>APPLY</strong></a>
+            <a href="about.html"><strong>ABOUT</strong></a>
+        </nav>
+        <a id="mail" href="mailto:info@dynamictech.com.au"><strong>Contact Us</strong></a>
+
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="open-btn">☰</label>
+
+        <div class="sidebar">
+            <label for="toggle" class="close-btn">X</label>
+            <a href="index.html"><strong>HOME</strong></a>
+            <a href="jobs.html"><strong>CAREERS</strong></a>
+            <a href="apply.html"><strong>APPLY</strong></a>
+            <a href="about.html"><strong>ABOUT</strong></a>
+        </div>
+        <label for="toggle" class="overlay"></label>
+    </header>
 <main>
   <section id="company-overview">
     <h1>Dynamic Tech - Company Overview</h1>
