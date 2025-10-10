@@ -44,17 +44,17 @@
 
                     <p>
                         <label for="first_name">First name <span>*</span></label>
-                        <input type="text" id="first_name" name="first_name" required="required">
+                        <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" pattern="[a-z]{1,20}" required="required">
                     </p>
 
                     <p>
                         <label for="last_name">Last name <span>*</span></label>
-                        <input type="text" id="last_name" name="last_name" required="required">
+                        <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" pattern="[a-z]{1,20}" required="required">
                     </p>
 
                     <p>
                         <label for="date_of_birth">Date of birth <span>*</span></label>
-                        <input type="text" id="date_of_birth" name="date_of_birth" placeholder="Enter your date of birth (dd/mm/yyyy)" required="required" pattern="\d{1,2}\/\d{1,2}\/\d{4}">
+                        <input type="text" id="date_of_birth" name="date_of_birth" placeholder="Enter your date of birth (dd/mm/yyyy)" pattern="^(0[1-9]|[12][0-9]|3[01]/(0[1-9]|1[0-2])/([0-9]{4}))$" required="required" pattern="\d{1,2}\/\d{1,2}\/\d{4}">
                     </p>
 
                     <p>
@@ -73,12 +73,12 @@
 
                     <p>
                         <label for="str_addres">Street address <span>*</span></label>
-                        <input type="text" id="str_addres" name="str_addres" placeholder="Enter your street address" required="required"></input>
+                        <input type="text" id="str_addres" name="str_addres" placeholder="Enter your street address" pattern="[0-9]{1,40}" required></input>
                     </p>
 
                     <p>
                         <label for="suburb_town">Suburb/town <span>*</span></label>
-                        <input type="text" id="suburb_town" name="suburb_town" placeholder="Enter your suburb/town" required="required">
+                        <input type="text" id="suburb_town" name="suburb_town" placeholder="Enter your suburb/town" pattern="[0-9]{1,40}" required>
                     </p>
 
                     <p>
@@ -98,12 +98,12 @@
 
                     <p>
                         <label for="postcode">PostCode <span>*</span></label>
-                        <input type="text" id="postcode" name="postcode" placeholder="Enter your postcode (4 digits)" pattern="[0-9]{4}" required>
+                        <input type="text" id="postcode" name="postcode" placeholder="Enter your postcode (4 digits)" pattern="^[a-zA-Z0-9\s\-]{4}$" required>
                     </p>
 
                     <p>
                         <label for="email">Email <span>*</span></label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                        <input type="email" name="email" id="email" placeholder="Enter your email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                     </p>
 
                     <p>
