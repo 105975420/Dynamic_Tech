@@ -11,13 +11,25 @@
 <body id="body_apply">
     <header>
         <a href="index.html"><img id="company_logo" src="images/company_logo.png" alt="company logo"></a>
-        <nav>
+        <nav id="menu">
             <a href="index.html"><strong>HOME</strong></a>
             <a href="jobs.html"><strong>CAREERS</strong></a>
             <a class="active" href="apply.html"><strong>APPLY</strong></a>
             <a href="about.html"><strong>ABOUT</strong></a>
         </nav>
         <a id="mail" href="mailto:info@dynamictech.com.au"><strong>Contact Us</strong></a>
+
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="open-btn">☰</label>
+
+        <div class="sidebar">
+            <label for="toggle" class="close-btn">X</label>
+            <a href="index.html"><strong>HOME</strong></a>
+            <a href="jobs.html"><strong>CAREERS</strong></a>
+            <a href="apply.html"><strong>APPLY</strong></a>
+            <a href="about.html"><strong>ABOUT</strong></a>
+        </div>
+        <label for="toggle" class="overlay"></label>
     </header>
     <main id="main_apply">
         <section id="containner_apply">
@@ -44,12 +56,12 @@
 
                     <p>
                         <label for="first_name">First name <span>*</span></label>
-                        <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" pattern="[a-z]{1,20}" required="required">
+                        <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" pattern="[a-zA-Z]{1,20}" required="required">
                     </p>
 
                     <p>
                         <label for="last_name">Last name <span>*</span></label>
-                        <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" pattern="[a-z]{1,20}" required="required">
+                        <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" pattern="[a-zA-Z]{1,20}" required="required">
                     </p>
 
                     <p>
@@ -73,12 +85,12 @@
 
                     <p>
                         <label for="str_addres">Street address <span>*</span></label>
-                        <input type="text" id="str_addres" name="str_addres" placeholder="Enter your street address" pattern="[0-9]{1,40}" required></input>
+                        <input type="text" id="str_addres" name="str_addres" placeholder="Enter your street address" pattern="[a-zA-Z0-9]{1,40}" required></input>
                     </p>
 
                     <p>
                         <label for="suburb_town">Suburb/town <span>*</span></label>
-                        <input type="text" id="suburb_town" name="suburb_town" placeholder="Enter your suburb/town" pattern="[0-9]{1,40}" required>
+                        <input type="text" id="suburb_town" name="suburb_town" placeholder="Enter your suburb/town" pattern="[a-zA-Z0-9]{1,40}" required>
                     </p>
 
                     <p>

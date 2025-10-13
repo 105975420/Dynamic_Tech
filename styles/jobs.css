@@ -76,14 +76,6 @@ body {
   color: #444;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1154px) {
-  #company-overview,
-  #company-info {
-    width: 95%;
-    padding: 20px;
-  }
-}
 
 /*-------------------Company Detail----------------------*/
 
