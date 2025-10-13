@@ -1,51 +1,37 @@
-h1,h3,h4 {
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(90deg, orange, #f4271b);
+}
+
+h1, h3, h4 {
   text-align: center;
 }
+
 .hero-title {
-  font-family: 'Poppins', 'Montserrat', sans-serif; 
-  font-size: 60px; 
-  font-weight: 900; 
-  color: white; 
-  text-align: center; 
-  letter-spacing: 2px; 
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
   margin: 40px 0;
-  text-shadow: 0 4px 15px rgba(0,0,0,0.4); 
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 .menu {
-  text-align: center; 
-  margin-top: 50px; 
-}
-.student-box {
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   text-align: center;
-  padding: 20px;
-  width: 260px;
-  transition: transform 0.2s;
+  margin-top: 50px;
 }
 
-.student-box:hover {
-  transform: scale(1.05);
-}
-
-.student-box img {
-  width: 100%;
-  height: 280px; /* Giới hạn chiều cao ảnh */
-  object-fit: cover; /* Cắt ảnh để vừa khung mà không méo */
-  border-radius: 15px;
-  margin-bottom: 10px;
-}
-
-.student-box p {
-  margin: 6px 0;
-  font-family: Arial, sans-serif;
-}
-
-.student-box b {
-  font-size: 18px;
-}
 .menu a {
   display: inline-block;
   margin: 10px;
@@ -54,36 +40,65 @@ h1,h3,h4 {
   background-color: #333;
   padding: 10px 20px;
   border-radius: 8px;
-}
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  padding: 0;
-  background: linear-gradient(90deg, orange, #f4271b); 
+  transition: background 0.3s;
 }
 
-/* Container chỉ cho ảnh */
+.menu a:hover {
+  background-color: #555;
+}
+
+.student-box {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding: 20px;
+  width: 260px;
+  transition: transform 0.2s;
+  margin: 20px auto;
+}
+
+.student-box:hover {
+  transform: scale(1.05);
+}
+
+.student-box img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.student-box p {
+  margin: 6px 0;
+}
+
+.student-box b {
+  font-size: 18px;
+}
+
+
 .image-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 80px; /* tăng khoảng cách nếu ảnh to hơn */
+  gap: 60px;
   margin-top: 50px;
+  padding: 0 20px;
 }
 
 .image-item {
   text-align: center;
-  width: 300px; /* rộng theo kích thước ảnh */
+  width: 300px;
 }
 
 .image-item img {
-  width: 300px;
+  width: 100%;
   height: 300px;
   object-fit: cover;
   border-radius: 12px;
-  display: block;
-  margin: 0 auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -92,75 +107,74 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: #111;
-  line-height: 1.5;
 }
+
+
 .centered-table {
   display: flex;
   justify-content: center;
-  margin-top: 80px; /* tạo khoảng cách phía trên */
+  margin-top: 80px;
+  padding: 0 10px;
 }
 
 .centered-table table {
   border-collapse: collapse;
   background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: auto;
   border-radius: 10px;
 }
 
 .centered-table td {
-  padding: 30px 50px;
-  font-size: 26px;
+  padding: 20px 30px;
+  font-size: 22px;
   font-weight: bold;
   color: #222;
-  line-height: 1.6;
 }
+
 #group-photos img {
-   width: 60%;         
-  max-width: 900px;    
-  height: auto;       
-  display: block;      
-  margin: 20px auto;    
-  border-radius: 10px;  
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); 
+  width: 60%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
-  #member-contribution {
+
+
+#member-contribution {
   width: 85%;
   margin: 40px auto;
   border-radius: 20px;
   background: linear-gradient(135deg, #fff6f6, #ffecec);
   padding: 40px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-
-#member-contribution  {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
   color: #b71c1c;
   font-size: 2em;
   font-weight: bold;
-  margin-bottom: 30px;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
-/* Accordion container */
+
+
 #member-contribution .accordion {
   border: 1px solid #ddd;
   border-radius: 8px;
   margin-bottom: 15px;
-  overflow: hidden;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
+
 .profile-image {
   display: block;
   margin: 10px auto 20px;
-  width: 120px;        
+  width: 120px;
   height: 120px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
-/* Accordion labels */
+
 #member-contribution .accordion label {
   display: block;
   background: linear-gradient(90deg, #ffe5e5, #ffd6d6);
@@ -168,14 +182,13 @@ body {
   padding: 14px 20px;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s;
 }
 
 #member-contribution .accordion label:hover {
   background: linear-gradient(90deg, #ffcaca, #ffbdbd);
 }
 
-/* Accordion content */
 #member-contribution .accordion .content {
   max-height: 0;
   overflow: hidden;
@@ -187,11 +200,12 @@ body {
   transition: max-height 0.4s ease, padding 0.3s ease;
 }
 
-/* Expand when checkbox checked */
 #member-contribution .accordion input[type="checkbox"]:checked ~ .content {
   max-height: 600px;
   padding: 20px;
 }
+
+
 .full-width-table {
   width: 100%;
   margin-top: 20px;
@@ -201,12 +215,10 @@ body {
 .full-width-table table {
   width: 100%;
   border-collapse: collapse;
-  font-family: Arial, sans-serif;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.full-width-table th,
-.full-width-table td {
+.full-width-table th, .full-width-table td {
   border: 1px solid #ddd;
   padding: 16px;
   text-align: center;
@@ -222,4 +234,26 @@ body {
   background-color: #f9f9f9;
 }
 
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 45px;
+  }
+
+  .image-container {
+    gap: 40px;
+  }
+
+  #member-contribution {
+    width: 90%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1154px) {
+  #member-contribution,
+  #member {
+    width: 95%;
+    padding: 20px;
+  }
+}
 
