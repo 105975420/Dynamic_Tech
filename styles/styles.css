@@ -149,14 +149,14 @@ footer{
   text-align: center;
 }
 
-/* Checkbox ẩn */
+/* ------------------------------------------------------------- */
   #toggle {
     display: none;
   }
 
-  /* Nút mở menu */
+ 
   .open-btn {
-    display: none; /* Mặc định ẩn (desktop) */
+    display: none; 
     padding: 10px 20px;
     background: #333;
     color: white;
@@ -164,14 +164,14 @@ footer{
     user-select: none;
   }
 
-  /* Checkbox điều khiển (ẩn) */
+
   #toggle {
     display: none;
   }
 
-  /* Nút mở sidebar */
+ 
   .open-btn {
-    display: none; /* Mặc định ẩn trên desktop */
+    display: none; 
     padding: 10px;
     margin-left: 50%;
     background: white;
@@ -181,12 +181,12 @@ footer{
     font-size: 40px;
   }
 
-  /* Sidebar — nằm bên phải */
+
   .sidebar {
     position: fixed;
     z-index: 1000;
     top: 0;
-    right: -300px; /* Ẩn ra ngoài bên phải */
+    right: -300px; 
     width: 250px;
     height: 100vh;
     background:white;
@@ -196,12 +196,12 @@ footer{
     box-shadow: -3px 0 6px rgba(0, 0, 0, 0.3);
   }
 
-  /* Khi checkbox được check, sidebar trượt vào */
+ 
   #toggle:checked ~ .sidebar {
     right: 0;
   }
 
-  /* Nút đóng */
+
   .close-btn {
     display: block;
     text-align: left;
@@ -229,7 +229,7 @@ footer{
     background: #d1c3c2;
   }
 
-  /* Overlay nền mờ */
+  
   .overlay {
     position: fixed;
     top: 0;
@@ -242,13 +242,13 @@ footer{
     transition: opacity 0.3s;
   }
 
-  /* Khi sidebar mở thì overlay hiện */
+  
   #toggle:checked ~ .overlay {
     opacity: 1;
     visibility: visible;
   }
 /* -----------------other devices(Pham Tien Dat)---------------- */
-/* ipad ngang */
+
 
 @media screen and (min-width: 1155px) {
   .open-btn, .sidebar, .overlay {
@@ -268,10 +268,10 @@ footer{
     display: none;
   }
   .open-btn {
-      display: inline-block; /* Hiện nút menu khi mobile */
+      display: inline-block; 
     }
 
   .sidebar {
-      display: block; /* Hiện sidebar (ẩn trượt ra) */
+      display: block;
     }
 }
